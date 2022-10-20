@@ -33,12 +33,12 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+/* .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
-  margin-top: 80px;
-}
+  margin-top: 80px; */
+
 
 .logo_place_header {
   position: absolute;
@@ -202,4 +202,118 @@
   text-decoration: none;
 }
 
+.kaufman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:#1f1f1f;
+  overflow: hidden;
+  position: relative;
+}
 
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+  line-height: 1.15;
+  font-size: 60px;
+  font-style: 600;
+}
+
+.section-subtitle_theme_dark {
+  color: white;
+  line-height: 34px;
+  font-size: 24px;
+  font-style: normal;
+}
+
+
+.table__cell_theme_dark {
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.kaufman__triangle {
+  display: flex;
+  width: 877px;
+  height: 877px;
+  background-image:url(../images/kaufman-triangle.svg);
+  background-size:contain;
+  position: absolute;
+  top: 0px;
+  right: -210px;
+  z-index: 0;
+}
+
+.footer {
+  min-height: 350px;
+  /* background-color:#1f1f1f;
+  color:white; */
+  padding-top: 60px;
+  padding-bottom: 40px;
+  display: flex;
+  /justify-content: space-around;
+
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+
+.footer__columns_content_info {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__column-heading {
+  line-height: 30px;
+  font-style: normal;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer__column-links {
+  list-style: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.column-link {
+
+}
+
+.footer__columns_content_social {
+  display: flex;ект
+  flex-direction: column;
+
+}
+
+.footer__social-picture {
+  min-height: 16px;
+  width: 16px;
+  padding-right: 10px;
+}
+
+.footer__columns_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.logo_place_footer {
+  width: 228px;
+  height: 32px;
+  background-size: contain;
+}
