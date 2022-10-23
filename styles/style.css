@@ -61,7 +61,7 @@
   left: 64px;
   line-height: 25px;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -82,14 +82,16 @@
 }
 
 .description {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  /* margin-bottom: 100px; */
   display: flex;
+  justify-content: center;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
+  width: 80%;
 }
 
 .two-columns__brief {
@@ -99,45 +101,56 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  padding: 0;
 }
 
 .two-columns__main-text {
   min-width: 784px;
-  max-width: 80%;
+  width: 80%;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__paragraph {
-  font-weight: normal;
-  margin-bottom: 30px;
-  margin-top: 0;
+  margin: 0 0 30px 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
+  font-weight: normal;
 }
 
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
+  margin: 0;
+  padding: 0;
 }
 
 .digits {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 100px 0;
 }
 
 .section-title {
   line-height: 1.15;
   font-size: 60px;
-  font-style: normal;
   margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
 }
 
 .section-subtitle {
   line-height: 34px;
   font-size: 24px;
-  font-style: normal;
+  font-weight: normal;
   margin-bottom: 60px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .table {
@@ -145,24 +158,29 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1100px;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 .table__cell {
   width: 250px;
-  margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .table__heading {
-  margin-bottom: 20px;
   line-height: 1.15;
-  font-style: 600;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
 }
 
 .table__text {
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 20px 0;
   line-height: 1.2;
   font-size: 18px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .feynman {
@@ -183,22 +201,24 @@
   margin-top: 100px;
   line-height: 1.15;
   font-size: 120px;
-  font-style: 600;
+  font-weight: 600;
   text-align: center;
 }
 
 .feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
-  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 70px;
 }
 
 .feynman__link {
   line-height: 51px;
   font-size: 36px;
-  font-style: normal;
+  font-weight: normal;
   position: absolute;
-  top: 510px;
+  top: 60%;
   right: 48px;
   text-decoration: none;
 }
@@ -210,6 +230,7 @@
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  padding: 90px 0;
 }
 
 .section-title_theme_dark {
@@ -224,7 +245,7 @@
   color: white;
   line-height: 34px;
   font-size: 24px;
-  font-style: normal;
+  font-weight: normal;
 }
 
 
@@ -253,8 +274,8 @@
   min-height: 350px;
   background-color:#1f1f1f;
   color:white;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  /* padding-top: 60px;
+  padding-bottom: 40px; */
   display: flex;
   justify-content: center;
   padding: 60px 0 40px 0;
@@ -266,11 +287,11 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  /* align-content: center; */
 }
 
 
-.footer__columns_content_info {
+.footer__column_content_info {
   display: flex;
   flex-direction: column;
 
@@ -278,9 +299,11 @@
 
 .footer__column-heading {
   line-height: 30px;
-  font-style: normal;
+  font-weight: 600;
   font-size: 18px;
   margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column-links {
@@ -288,10 +311,10 @@
   line-height: 30px;
   font-size: 18px;
   font-style: normal;
-  margin-bottom: 16px;
+  margin: 20px 0 16px 0;
   display: flex;
   flex-direction: column;
-
+  padding: 0;
 }
 
 .column-link {
@@ -299,10 +322,10 @@
   color:white;
 }
 
-.footer__columns_content_social {
+.footer__column_content_social {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .footer__social-picture {
@@ -311,7 +334,7 @@
   padding-right: 10px;
 }
 
-.footer__columns_content_copyright {
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -323,6 +346,10 @@
   left: 0;
   bottom: 0;
   margin-bottom: 18px;
+  padding: 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .logo_place_footer {
